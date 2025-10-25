@@ -1,6 +1,6 @@
 # emannx-tickets
 
-A robust **Ticket Management Web App** built with **React.js**. Manage your tickets efficiently with a clean, responsive interface.
+A robust **Ticket Management Web App** built with **Vue.js 3**. Manage your tickets efficiently with a clean, responsive interface.
 
 ## Features
 
@@ -15,11 +15,11 @@ A robust **Ticket Management Web App** built with **React.js**. Manage your tick
 
 ## Tech Stack
 
-- **Framework**: React.js 18.2.0
-- **Routing**: React Router DOM 6.20.0
-- **Notifications**: React Toastify 9.1.3
+- **Framework**: Vue.js 3 with Composition API
+- **Build Tool**: Vite
+- **Routing**: Vue Router 4
 - **Styling**: CSS3 with custom design system
-- **State Management**: React Hooks (useState, useEffect)
+- **State Management**: Vue Composition API (ref, computed)
 
 ## Installation & Setup
 
@@ -42,7 +42,7 @@ A robust **Ticket Management Web App** built with **React.js**. Manage your tick
 
 3. **Start the development server**
    \`\`\`bash
-   npm start
+   npm run dev
    \`\`\`
 
 4. **Open in browser**
@@ -62,37 +62,30 @@ Or create your own account with any valid email and password (minimum 6 characte
 \`\`\`
 src/
 ├── components/
-│   ├── Navbar.jsx
-│   ├── Footer.jsx
-│   ├── ProtectedRoute.jsx
-│   ├── TicketCard.jsx
-│   └── Toast.jsx
+│   ├── Navbar.vue
+│   ├── Footer.vue
+│   └── Toast.vue
 ├── pages/
-│   ├── Landing.jsx
-│   ├── Login.jsx
-│   ├── Signup.jsx
-│   ├── Dashboard.jsx
-│   └── Tickets.jsx
+│   ├── Landing.vue
+│   ├── Login.vue
+│   ├── Signup.vue
+│   ├── Dashboard.vue
+│   └── Tickets.vue
+├── router/
+│   └── index.js
 ├── utils/
 │   ├── storage.js
 │   └── validation.js
 ├── styles/
-│   ├── index.css
-│   ├── navbar.css
-│   ├── footer.css
-│   ├── landing.css
-│   ├── auth.css
-│   ├── dashboard.css
-│   ├── ticket-card.css
-│   └── tickets.css
-├── App.jsx
-└── index.js
+│   └── index.css
+├── App.vue
+└── main.js
 \`\`\`
 
 ## Storage Keys
 
 - **Session**: `ticketapp_session` - Stores user session token
-- **Tickets**: `tickets_data` - Stores all tickets as JSON array
+- **Tickets**: `ticketapp_tickets` - Stores all tickets as JSON array
 
 ## Validation Rules
 
@@ -104,7 +97,7 @@ src/
 - **Title**: Required field
 - **Status**: Required, must be one of: `open`, `in_progress`, `closed`
 - **Description**: Optional
-- **Priority**: Optional, defaults to "Normal"
+- **Priority**: Optional, defaults to "medium"
 
 ## Status Colors
 
@@ -155,4 +148,4 @@ For issues or questions, please open an issue in the repository.
 
 ---
 
-**Built with ❤️ using React.js**
+**Built with ❤️ using Vue.js 3**

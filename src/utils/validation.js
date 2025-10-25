@@ -1,21 +1,33 @@
 export const validateEmail = (email) => {
+  if (!email) {
+    return "Email is required"
+  }
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-  return emailRegex.test(email)
+  if (!emailRegex.test(email)) {
+    return "Please enter a valid email address"
+  }
+  return ""
 }
 
 export const validatePassword = (password) => {
-  return password.length >= 6
+  if (!password) {
+    return "Password is required"
+  }
+  if (password.length < 6) {
+    return "Password must be at least 6 characters"
+  }
+  return ""
 }
 
 export const validateTicket = (ticket) => {
   const errors = {}
 
   if (!ticket.title || ticket.title.trim() === "") {
-    errors.title = "Title is required."
+    errors.title = "Title is required"
   }
 
   if (!ticket.status || !["open", "in_progress", "closed"].includes(ticket.status)) {
-    errors.status = "Invalid status selected."
+    errors.status = "Invalid status selected"
   }
 
   return errors

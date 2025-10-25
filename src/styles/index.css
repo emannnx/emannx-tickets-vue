@@ -31,7 +31,7 @@ body {
   line-height: 1.6;
 }
 
-#root {
+#app {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -112,6 +112,8 @@ select.input-error {
   font-weight: 600;
   transition: all 0.3s ease;
   cursor: pointer;
+  border: none;
+  font-size: 1rem;
 }
 
 .btn-primary {
