@@ -4,7 +4,6 @@
       <div class="footer-content">
         <div class="footer-section">
           <h4>emannx-tickets</h4>
-          <p>Streamline your workflow with intelligent ticket management.</p>
         </div>
         <div class="footer-section">
           <h4>Quick Links</h4>
@@ -14,14 +13,9 @@
             <li><a href="#terms">Terms of Service</a></li>
           </ul>
         </div>
-        <div class="footer-section">
-          <h4>Contact</h4>
-          <p>Email: support@emannx-tickets.com</p>
-          <p>Phone: +1 (555) 123-4567</p>
-        </div>
+  
       </div>
-      <div class="footer-bottom">
-        <p>&copy; 2025 emannx-tickets. All rights reserved.</p>
+      <div clss="footer-bottom">
       </div>
     </div>
   </footer>
